@@ -146,6 +146,22 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Activities.cs" />
+    <Compile Include="Models\AdditionalData.cs" />
+    <Compile Include="Models\Current.cs" />
+    <Compile Include="Models\Datum.cs" />
+    <Compile Include="Models\Email.cs" />
+    <Compile Include="Models\MatchesFilters.cs" />
+    <Compile Include="Models\MatchesFilters2.cs" />
+    <Compile Include="Models\Meta.cs" />
+    <Compile Include="Models\Pagination.cs" />
+    <Compile Include="Models\Participant.cs" />
+    <Compile Include="Models\Phone.cs" />
+    <Compile Include="Models\PipeDriveDataDeal.cs" />
+    <Compile Include="Models\PipeDriveDataNote.cs" />
+    <Compile Include="Models\PipeDriveDataPerson.cs" />
+    <Compile Include="Models\RootObject.cs" />
+    <Compile Include="Models\RootObjectUpdateDeal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -187,7 +203,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
