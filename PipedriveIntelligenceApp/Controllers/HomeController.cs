@@ -73,7 +73,7 @@ namespace PipedriveIntelligenceApp.Controllers
 
         private string GetAllActivitiesOfDeal(int deal_id)
         {
-            HttpWebRequest httpWebRequest = (HttpWebRequest)WebRequest.Create("https://api.pipedrive.com/v1/deals/" + (object)deal_id + "/activities?start=0&api_token=3d2d3f8fa2125027c0410cf79c3c43b1898306b4");
+            HttpWebRequest httpWebRequest = (HttpWebRequest)WebRequest.Create("https://api.pipedrive.com/v1/deals/" + (object)deal_id + "/activities?start=0&api_token=xxxxxxx");
             httpWebRequest.ContentType = "application/json";
             httpWebRequest.Method = "GET";
             try
@@ -107,7 +107,7 @@ namespace PipedriveIntelligenceApp.Controllers
 
         private string SendtoRestAPI(string postData, string addtype, string method, string deal_id)
         {
-            HttpWebRequest httpWebRequest = (HttpWebRequest)WebRequest.Create("https://api.pipedrive.com/v1/" + addtype + "/" + deal_id + "?api_token=3d2d3f8fa2125027c0410cf79c3c43b1898306b4");
+            HttpWebRequest httpWebRequest = (HttpWebRequest)WebRequest.Create("https://api.pipedrive.com/v1/" + addtype + "/" + deal_id + "?api_token=xxxxxxxx");
             httpWebRequest.ContentType = "application/json";
             httpWebRequest.Method = method;
             using (StreamWriter streamWriter = new StreamWriter(httpWebRequest.GetRequestStream()))
